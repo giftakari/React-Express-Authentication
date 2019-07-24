@@ -10,6 +10,11 @@
     "type": "git",
     "url": "\u0016https://github.com/giftakari/React-Express-Authentication.git"
   },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.4",
+    "pug": "^2.0.0-beta2"
+  },
   "author": "Godsgift Akari",
   "license": "MIT"
 }
