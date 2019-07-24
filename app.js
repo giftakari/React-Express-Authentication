@@ -1,7 +1,14 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3000;
+
+//Connect mongoose to our application
+mongoose.connect("mongodb://localhost:27017/bookstore");
+
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "connected"));
 
 // parse incoming requests
 app.use(bodyParser.json());
